@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encriptador Alura</title>
+	<link rel="stylesheet" href=style.css>
+</head>
+
+<body>
+<main>
+	<div class="entrada">
+		<textarea id="textInput" placeholder="digite seu texto aqui..."></textarea>
+		<div class="warning">
+		<p><span>&#x26a0 </span> Apenas letras minúsculas e sem acento</p>
+		</div>
+	</div>
+	<div class="saida">
+		<div id="msg_inicial">
+			<img src="img/imagem.svg" id="imagem-resultado">
+			<h3>Insira um texto para criptografar!</h3>
+		</div>
+		<div id="encriptado">
+			<p class="resultado"></p>
+			<button onclick="copiar()" id="copy">Copiar</button>
+		</div>
+	</div>
+	<div class="acoes">
+		<button onclick="encripta()" class="enc">Criptografar</button>
+		<button  onclick="desencripta()" class="dec">Descriptografar</button>
+	</div>
+</main>
+<footer>
+	<p class="footer">Desenvolvido por Everson Tomasi</p>
+	<a href="https://github.com/fusionappxx"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="git"></a>
+</footer>
+<script src="javascript.js"></script>
+</body>
